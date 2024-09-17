@@ -1,3 +1,6 @@
+const prompt = require ('prompt-sync');
+const entrada = prompt();
+
 const nomeCompleto = "Anni Vitória Lux Cois ";
 const anoNascimento = 2007;
 let anoAtual = 2024;
@@ -30,7 +33,8 @@ console.log(listaDeViagens);
 listaDeViagens.splice(1,2);
 console.log(listaDeViagens);
 
-const idadeComprador = 19;
+var idadeComprador = entrada("Qual é o seu nome? ");
+var idadeComprador = entrada("Qual é a sua idade? ");
 
 if (idadeComprador < 18) {
   console.log("Compra negada!! Idade não permitida. Chame seu responsável")
