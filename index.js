@@ -33,13 +33,15 @@ console.log(listaDeViagens);
 listaDeViagens.splice(1,2);
 console.log(listaDeViagens);
 
-var idadeComprador = entrada("Qual é o seu nome? ");
+var nomeComprador = entrada("Qual é o seu nome? ");
 var idadeComprador = entrada("Qual é a sua idade? ");
 
 if (idadeComprador < 18) {
-  console.log("Compra negada!! Idade não permitida. Chame seu responsável")
+  
+  console.log(`Olá ${nomeComprador} já que sua idade é ${idadeComprador} infelizmente não podemos permitir a compra. Chame seu resposável para finalizar a compra :) `); 
 }
 
 if (idadeComprador >= 18) {
-console.log("Parabéns! Compra realizada com sucesso. Boa viagem!")
+console.log(`Bem vindo(a) ${nomeComprador} ! Dê inicio a sua compra vericando os destinos disponiveís. Os destinos disponiveís são: Amsterdam, Alemanha, Paris e Tóquio`)
   }
+
