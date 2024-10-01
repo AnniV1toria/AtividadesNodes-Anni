@@ -12,8 +12,27 @@ let AnoAtual = 2024;
 let Idade = 17;
 const NomeCompleto = "Anni Vitória Lux Cois ";
 const Faculdade = "Pedagogia";
-
 console.log("Olá meu nome é " + NomeCompleto + ",tenho " + Idade + " anos " +  "estamos no ano de " + AnoAtual + " gostaria de fazer faculdade na área de " + Faculdade);
+
+const loginCerto = "Nana";
+const senhaCerta = 12345;
+console.log("");
+console.log("AGÊNCIA DE VIAGENS ✈️🌍");
+console.log(" ");
+console.log("Faça seu login");
+
+var login = entrada("Por favor, entre com o seu login.")
+var senha = entrada("Bem vindo novamente, digite sua senha")
+
+while(login != loginCerto){
+  console.log("Login Incorreto");
+  login = entrada("Digite seu login novamente: ");
+}
+
+while(senha != senhaCerta){
+  console.log(" Atenção senha Incorreta!");
+  senha = entrada("Digite sua senha novamente: ");
+}
 
 console.log(`oi eu sou ${nomeCompleto} meu ano de nascimento é ${anoNascimento}`)
 
@@ -42,6 +61,7 @@ if (idadeComprador < 18) {
 }
 
 if (idadeComprador >= 18) {
-console.log(`Bem vindo(a) ${nomeComprador} ! Dê inicio a sua compra vericando os destinos disponiveís. Os destinos disponiveís são: Amsterdam, Alemanha, Paris e Tóquio`)
+console.log(`Bem vindo(a) ${nomeComprador} ! Dê inicio a sua compra vericando os destinos disponiveís, que são: Amsterdam, Alemanha, Paris e Tóquio`)
   }
+
 
