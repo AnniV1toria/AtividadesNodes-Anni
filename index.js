@@ -14,28 +14,6 @@ const NomeCompleto = "Anni Vitória Lux Cois ";
 const Faculdade = "Pedagogia";
 console.log("Olá meu nome é " + NomeCompleto + ",tenho " + Idade + " anos " +  "estamos no ano de " + AnoAtual + " gostaria de fazer faculdade na área de " + Faculdade);
 
-const loginCerto = "Nana";
-const senhaCerta = 12345;
-console.log("");
-console.log("AGÊNCIA DE VIAGENS ✈️🌍");
-console.log(" ");
-console.log("Faça seu login");
-
-var login = entrada("Por favor, entre com o seu login.")
-var senha = entrada("Bem vindo novamente, digite sua senha")
-
-while(login != loginCerto){
-  console.log("Login Incorreto");
-  login = entrada("Digite seu login novamente: ");
-}
-
-while(senha != senhaCerta){
-  console.log(" Atenção senha Incorreta!");
-  senha = entrada("Digite sua senha novamente: ");
-}
-
-console.log(`oi eu sou ${nomeCompleto} meu ano de nascimento é ${anoNascimento}`)
-
 const listaDeViagens = new Array( 
 `Amsterdam` ,
 `Alemanha` ,
@@ -43,16 +21,27 @@ const listaDeViagens = new Array(
 `Tóquio` ,
   )
 
-console.log(listaDeViagens);
+const loginCerto = "Nana";
+const senhaCerta = 12345;
+console.log("");
+console.log("                   -------- 𝑨𝒈𝒆̂𝒏𝒄𝒊𝒂 𝒅𝒆 𝒗𝒊𝒂𝒈𝒆𝒏𝒔 ✈️🌍 --------");
+console.log(" ");
+console.log("Faça seu login.");
 
-console.log(listaDeViagens[3]);
-listaDeViagens.push("Coronel Vivida");
-console.log(listaDeViagens);
+var login = entrada("Por favor, entre com o seu login ➡️")
+var senha = entrada("Bem vindo novamente, digite sua senha")
 
-listaDeViagens.splice(1,2);
-console.log(listaDeViagens);
+while(login != loginCerto){
+  console.log("Login Incorreto.");
+  login = entrada("Digite seu login novamente: ");
+}
 
-var nomeComprador = entrada("Qual é o seu nome? ");
+while(senha != senhaCerta){
+  console.log(" Atenção, senha Incorreta!");
+  senha = entrada("Digite sua senha novamente: ");
+}
+
+var nomeComprador = entrada("Seja bem vindo(a)! Qual é o seu nome? ");
 var idadeComprador = entrada("Qual é a sua idade? ");
 
 if (idadeComprador < 18) {
@@ -61,7 +50,9 @@ if (idadeComprador < 18) {
 }
 
 if (idadeComprador >= 18) {
-console.log(`Bem vindo(a) ${nomeComprador} ! Dê inicio a sua compra vericando os destinos disponiveís, que são: Amsterdam, Alemanha, Paris e Tóquio`)
+console.log(`Bem vindo(a) ${nomeComprador} ! Dê inicio a sua compra vericando os destinos disponiveís`)
   }
 
+console.log("OLá! Nossos destinos disponivéis são:");
+console.log(listaDeViagens);
 
